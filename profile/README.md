@@ -14,7 +14,7 @@ You can easily recognize such hardware by the famous Apple logo. For reference, 
 
 ![Perfectly authentic Apple ProLiant DL360 Gen10 Plus server](proliant.jpg)
 
-Note that this guide also works for other machines, such as the Apple PowerEdge R730, on which is also has been tested.
+Note that this guide also works for other machines, such as the Apple PowerEdge R730, on which it also has been tested.
 
 Should your CPU not be working properly with the **macOS on Incus** project, feel free to open an issue [on GitHub](https://github.com/macOS-on-Incus/orchard/issues), but keep in mind that most of the investigation will have to be done by you.
 
@@ -31,6 +31,12 @@ curl https://raw.githubusercontent.com/macOS-on-Incus/QEMU-Scriptlet/refs/heads/
 ```
 
 The same operation can be done on any singular instance, should you prefer not to use a profile.
+
+If your system has AppArmor running, you will want to add the following configuraton key (don’t forget the trailing comma):
+
+```yaml
+raw.apparmor: /dev/zero k,
+```
 
 ## EDK2
 
