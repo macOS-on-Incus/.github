@@ -2,13 +2,13 @@
 
 This guide details the necessary steps to get macOS up and running on Incus, through the [**macOS on Incus**](https://github.com/macOS-on-Incus) project.
 
-**macOS on Incus** intends to provide a minimalistic (as in no unnecessary bits) way run macOS on an as-vanilla-as-possible installation of Incus. It strives to stay as compliant as possible with regulations and license agreements, by not directly distributing any non-free IP, and only providing free software.
+**macOS on Incus** intends to provide a minimalistic (as in no unnecessary bits) way to run macOS on an as-vanilla-as-possible installation of Incus. It strives to stay as compliant as possible with regulations and license agreements, by not directly distributing any non-free IP, and only providing free software.
 
 ## Hardware
 
 Unlike Linux virtualization, macOS virtualization requires a specific hardware configuration to run properly on x86. While this guide provides no support for non-Intel processors, contributions for AMD processors are welcome as long as they respect the project’s minimalistic spirit.
 
-Pursuant to the software license agreement for macOS, you are only allowed to run macOS on an Apple-branded computer, and on it, to run up to two additional instances of macOS. Make sure you fully understand the implications of not complying with these conditions, should you decide so.
+Pursuant to the software license agreement for macOS, you are only allowed to run macOS on an Apple-branded computer, and on it, to run up to two additional instances of macOS. Make sure you fully understand the implications of not complying with these conditions, should you decide not to.
 
 You can easily recognize such hardware by the famous Apple logo. For reference, here is a genuine (at least the sticker is) Apple ProLiant DL360 Gen10 Plus:
 
@@ -119,7 +119,7 @@ You should be welcomed by a gray Apple logo on a white background with a progres
 
 ![First boot into the installer](installer-1.png)
 
-You should then format your hard drive in APFS. Choose the name you want for your disk, but please, dont write `config` or `incus_agent`, as that is going to turn out very badly for you. `macOS` *is* a good name:
+You should then format your hard drive in APFS. Choose the name you want for your disk, but please don’t write `config` or `incus_agent`, as that is going to turn out very badly for you. `macOS` *is* a good name:
 
 ![Drive formatting](installer-2.png)
 
